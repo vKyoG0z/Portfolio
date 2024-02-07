@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/index.html'));
 });
 
+// app.get('/navbar', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'pages', 'navbar.html'));
+// });
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
