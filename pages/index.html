@@ -4,22 +4,22 @@
   <title>Hello Express!</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="./navbar.css" />
+  <!-- <link rel="stylesheet" href="./navbar.css" /> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
-  <!-- Ta barre de navigation -->
-  <div class="topnav">
-    <a class="active" href="#Accueil">Accueil</a>
-    <a href="#Projet">Projet</a>
-    <a href="#Formation">Formation</a>
-    <a href="#Contact">Contact</a>
-  </div> 
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
 
-<!-- Inclure la barre de navigation à partir du serveur Express -->
-<!-- <iframe src="http://localhost:3010/navbar" style="width: 100%; height: 50px; border: none;"></iframe> -->
+  <h1>PORTFOLIO REYNAUD JULIEN</h1>
 
-<h1>PORTFOLIO REYNAUD JULIEN</h1>
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
 
 </body>
 </html>
