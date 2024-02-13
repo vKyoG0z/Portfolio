@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
   <div class="topnav">
     <!-- Lien vers index.html (Accueil) -->
-    <a class="active" href="/">Accueil</a>
+    <a href="/">Accueil</a>
     <!-- Lien vers projet.html -->
     <a href="/projet">Projet</a>
     <!-- Lien vers formation.html -->
@@ -18,6 +19,26 @@
     <!-- Lien vers contact.html -->
     <a href="/contact">Contact</a>
   </div>
+
+  <script>
+    $(document).ready(function() {
+      // Récupérer le nom de la page actuelle
+      let currentPage = window.location.pathname;
+      // Si la page actuelle est la racine "/", utilisez '/' comme lien dans la barre de navigation
+      if (currentPage === '/') {
+        currentPage = '/index.html';
+      }
+      // Ajouter la classe active à l'élément correspondant à la page actuelle
+      $('a[href="' + currentPage + '"]').addClass('active');
+      
+      // Ajouter la classe active au lien "Accueil" si la page actuelle est index.html
+      if (currentPage === '/index.html') {
+        $('a[href="/"]').addClass('active');
+      }
+    });
+  </script>
+  
+  
 
 </body>
 </html>
