@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 1rem;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: lightblue;
+  }
+  
+  h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  
+  img {
+    width: 200px; /* Définit la largeur de l'image à 200 pixels */
+    height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+    max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+    display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+    /* margin: 0 auto; Centre l'image horizontalement */
+    transition: transform 0.5s ease;
+  }
+
+  img:hover {
+    transform: scale(1.1); /* Agrandit l'image de 10% */
+}
