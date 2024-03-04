@@ -28,6 +28,10 @@ app.get('/projet/slimego', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/slimego.html'));
 });
 
+app.get('/formation/prog', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/prog.html'));
+});
+
 
 //Définition de la route pour la page formation
 app.get('/formation', (req, res) => {
