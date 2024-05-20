@@ -1,27 +1,29 @@
 /* Fond noir de la barre de navigation */
 .topnav {
-  background-color: black;
+  background-color: #282c34;
   overflow: hidden;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 /* style de la barre de navigation text en blanc  */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #e0e0e0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: background-color 0.3s;
 }
 
 /* hover au survol de la souris */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #61dafb;
+  color: #1e1e1e;
 }
 
 /*.active pour la page en cours*/
 .topnav a.active { 
-  background-color: #07adb9;
-  color: white;
+  background-color: #61dafb;
+  color: #1e1e1e;
 }

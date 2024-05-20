@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Projet</title>
+  <title>Projets</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="./projet.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
   <!-- Placeholder pour la barre de navigation -->
   <div id="navbar-placeholder"></div>
-  <h1>SLIME GO</h1>
 
-  <a href="/projet/slimego">
-    <img src="SLIME_GO_LOGO.jpg"/>
-  </a> 
-  
+  <div class="banner">
+    <h1>Projets</h1>
+  </div>
+
+  <div class="container">
+    <div class="project-column">
+      <h1>SLIME GO</h1>
+      <a href="/projet/slimego">
+        <img src="SLIME_GO_LOGO.png" alt="SLIME GO Logo" class="slimego-logo">
+      </a>
+    </div>
+    <div class="project-column">
+      <h1>Ascii art C++</h1>
+      <div class="zebre-ascii">
+        <!-- Mettez à jour le lien vers la route /projet/asciiart -->
+        <a href="/projet/asciiart">
+          <img src="zebre_ascii.png" alt="Zèbre ASCII">
+        </a>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Chargement de la barre de navigation via AJAX
     $(function() {

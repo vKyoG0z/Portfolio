@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact</title>
+  <title>ASCII Art</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/navbar.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Nouvelles classes pour les images */
+    .tournesol-image, .codeascii-image {
+      width: 600px;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      margin: 40px auto;
+      transition: transform 0.5s ease;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,11 +25,18 @@
   <div id="navbar-placeholder"></div>
 
   <div class="banner">
-    <h1>Contact</h1>
+    <h1>ASCII Art</h1>
   </div>
 
   <div class="container">
-    <p>Pour toute question ou demande, veuillez me contacter à l'adresse email suivante : exemple@example.com.</p>
+      <h2>Tournesol</h2>
+      <div class="tournesol-image">
+        <img src="/tournesol.png" alt="Tournesol" class="tournesol-image">
+      </div>
+    <div class="project-column">
+      <h2>Code ASCII</h2>
+        <img src="/asciicode.png" alt="Code ASCII" class="codeascii-image">
+    </div>
   </div>
 
   <script>

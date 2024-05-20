@@ -28,10 +28,14 @@ app.get('/projet/slimego', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/slimego.html'));
 });
 
+// Définition de la route pour la page asciiart (sous-page de projet)
+app.get('/projet/asciiart', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/asciiart.html'));
+});
+
 app.get('/formation/prog', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/prog.html'));
 });
-
 
 //Définition de la route pour la page formation
 app.get('/formation', (req, res) => {

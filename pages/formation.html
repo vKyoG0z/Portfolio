@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Projet</title>
+  <title>Formation</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="/formation.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -12,14 +13,17 @@
   <!-- Placeholder pour la barre de navigation -->
   <div id="navbar-placeholder"></div>
 
-  <h1>BUT INFORMATIQUE GRAPHIQUE</h1>
+  <div class="banner">
+    <h1>Formation</h1>
+  </div>
 
-  
-  
-  <a href="/formation/prog">
-    <img src="iut_le_puy.jpg"/>
-  </a> 
-  
+  <div class="container">
+    <h1>BUT INFORMATIQUE GRAPHIQUE</h1>
+    <a href="/formation/prog">
+      <img src="iut_le_puy.jpg" alt="IUT Le Puy" class="iut-le-puy-logo">
+    </a>
+  </div>
+
   <script>
     // Chargement de la barre de navigation via AJAX
     $(function() {
