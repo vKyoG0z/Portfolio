@@ -37,6 +37,10 @@ app.get('/formation/prog', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/prog.html'));
 });
 
+app.get('/formation/git', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/git.html'));
+});
+
 //Définition de la route pour la page formation
 app.get('/formation', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/formation.html'));
