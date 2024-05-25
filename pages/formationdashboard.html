@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ma formation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>Les différents points de ma formation</h1>
+  </div>
+
+  <div class="container">
+    <h2>Les différents langages de programmation</h2>
+    <h3>C++ (QT)</h3>
+    <a href="/formationdashboard/qt">
+      <img src="/logoQt.png" alt="Logo Qt" class="qt-logo"/>
+    </a>
+    <div class="project-column">
+      <h3>C# (Unity)</h3>
+      <!-- Ajout du lien autour de l'image pour rediriger vers /formationdashboard/unity -->
+      <a href="/formationdashboard/unity">
+        <img src="/csharplogo.png" alt="Csharp logo" class="csharp-logo">
+      </a>
+    </div>
+
+
+    <!-- Ajout du bloc Git ici -->
+    <div class="project-column">
+      <h2>Git</h2>
+      <a href="/formationdashboard/git">
+        <img src="/git.png" alt="Git Logo" class="git-logo">
+      </a>
+    </div>
+ 
+
+      <!-- Ajout de l'image nr.png avec le lien vers /formationdashboard/numresponsable -->
+      <div class="project-column">
+        <h2>Numérique responsable</h2>
+        <a href="/formationdashboard/numresponsable">
+          <img src="/nr.png" alt="Num Responsable" class="nr-logo">
+        </a>
+      </div>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>

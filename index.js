@@ -33,13 +33,27 @@ app.get('/projet/asciiart', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/asciiart.html'));
 });
 
-app.get('/formation/prog', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/prog.html'));
+app.get('/formation/formationdashboard', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/formationdashboard.html'));
 });
 
-app.get('/formation/git', (req, res) => {
+app.get('/formationdashboard/git', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/git.html'));
 });
+
+app.get('/formationdashboard/qt', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/qt.html'));
+});
+
+app.get('/formationdashboard/unity', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/unity.html'));
+});
+
+app.get('/formationdashboard/numresponsable', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/numresp.html'));
+});
+
+
 
 //Définition de la route pour la page formation
 app.get('/formation', (req, res) => {

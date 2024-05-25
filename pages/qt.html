@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Qt</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>Qt</h1>
+  </div>
+
+  <div class="container">
+    <p>
+    Durant ma formation en deuxième année de BUT informatique, j'ai eu l'occasion de travailler avec le framework Qt, utilisant le langage C++.</p>
+    
+    <p>Avec Qt, nous avons principalement développé des interfaces graphiques, notamment en mettant en œuvre la mécanique des signaux et des slots pour gérer les interactions utilisateur telles que les clics sur des boutons.</p>
+
+<p>Le projet final de cette période a été l'implémentation du mécanisme Undo/Redo sur une application de dessin de formes simples.</p> <p> Par exemple, lorsque l'utilisateur choisit de revenir en arrière (Undo), il fallait pouvoir annuler la dernière action effectuée, comme supprimer une forme de l'écran ou restaurer sa position précédente.</p> <p> De même pour l'action Redo, il s'agissait de rétablir la dernière action annulée.</p>
+
+    <p>Ce projet m'a permis de mettre en pratique mes connaissances en programmation orientée objet, en gestion d'événements et en manipulation d'interfaces graphiques, tout en développant des compétences cruciales en termes de conception logicielle et de gestion d'états.
+    </p>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>

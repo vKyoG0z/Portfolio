@@ -26,7 +26,7 @@ body {
   border-radius: 5px;
 }
 
-h1 {
+h1,h2 {
   font-weight: 800;
   font-size: 2rem;
   margin: 0.5rem 0;
@@ -53,7 +53,7 @@ img:hover {
 
 /* Styles spécifiques pour l'image SLIME_GO_LOGO.png */
 .slimego-logo {
-  width: 600px; /* Définit la largeur de l'image à 200 pixels */
+  width: 600px; 
   height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
   max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
   display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
@@ -64,7 +64,7 @@ img:hover {
 
 /* Styles spécifiques pour l'image iut_le_puy.jpg */
 .iut-le-puy-logo {
-  width: 600px; /* Définit la largeur de l'image à 200 pixels */
+  width: 600px; 
   height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
   max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
   display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
@@ -73,7 +73,7 @@ img:hover {
 }
 
 .lobby-slimego{
-  width: 600px; /* Définit la largeur de l'image à 200 pixels */
+  width: 600px; 
   height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
   max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
   display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
@@ -82,7 +82,7 @@ img:hover {
 }
 
 .qt-logo{
-  width: 600px; /* Définit la largeur de l'image à 200 pixels */
+  width: 500px; 
   height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
   max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
   display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
@@ -130,4 +130,59 @@ img:hover {
   display: block; 
   margin: 40px auto; 
   transition: transform 0.5s ease; 
+}
+
+.linkedin-logo {
+  display: block;
+  margin: 20px auto; /* Centre l'image horizontalement */
+  width: 200px; /* Taille de l'image */
+  height: auto; /* Maintient les proportions de l'image */
+  transition: transform 0.3s ease; /* Transition pour l'animation au survol */
+}
+
+.linkedin-logo:hover {
+  transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+.gitlab-image {
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 20px auto; /* Ajout de marges pour centrer l'image horizontalement */
+}
+
+.csharp-logo {
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 20px auto; /* Ajout de marges pour centrer l'image horizontalement */
+}
+
+
+/* Style spécifique pour l'image Unity */
+.unity-logo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.nr-logo {
+  width: 600px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 40px auto; 
+  transition: transform 0.5s ease;
+}
+
+.tonnes-logo {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 40px auto; 
+  transition: transform 0.5s ease;
 }

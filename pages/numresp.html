@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Numérique Responsable</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>Numérique Responsable</h1>
+  </div>
+
+  <div class="container">
+    <!-- Ajout de l'image "2tonnes.png" au-dessus du texte -->
+    <img src="/tonnes.png" alt="2 Tonnes" class="tonnes-logo">
+
+    <p> Dans le cadre de ma formation, j'ai été sensibilisé au concept du numérique responsable, une réponse urgente aux impacts environnementaux qui ne cessent d'augmenter en raison de l'utilisation de la technologie. Nous avons appris à développer des pratiques de programmation optimisées, souvent désignées sous le terme de 'code vert' (qui est un code "écologique"), visant à réduire la consommation énergétique et les émissions de CO2 associées à nos applications et sites web.</p>
+
+    <p>Nous avons également participé à l'atelier '2 Tonne' qui nous encourage à repenser nos comportements quotidiens pour réduire notre empreinte carbone. Le concept repose sur l'idée que chacun de nous, en faisant de petites concessions dans nos actions quotidiennes, peut contribuer significativement à la lutte contre le changement climatique.
+    
+    L'atelier '2 Tonne' nous a permis de prendre conscience de l'impact de nos habitudes personnelles sur l'environnement et de découvrir des moyens concrets de les modifier pour mieux préserver notre planète. Cela inclut des ajustements simples mais efficaces, comme réduire notre consommation d'énergie, opter pour des modes de transport plus écologiques ou réduire notre consommation de viande qui sont en réalité des choses simples.</p>
+    
+    <p>Cette sensibilisation aux enjeux du numérique responsable avec des actions concrètes telles que l'atelier '2 Tonne', m'a permis de prendre conscience du rôle que nous avons à jouer à l'avenir.</p>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>

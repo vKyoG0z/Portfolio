@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Unity</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>Unity</h1>
+  </div>
+
+  <div class="container">
+    <img src="/unity.png" alt="Unity Logo" class="unity-logo" />
+    <p>
+      Pendant ma formation, j'ai découvert le monde du développement de jeux vidéo avec le moteur Unity. À travers deux projets distincts, un en 2D et l'autre en 3D, j'ai plongé dans l'univers de la création ludique.
+    </p>
+    <p>
+      L'un de ces projets, intitulé 'Slime Go', nous a transportés dans un récit épique où les Cactus et les Champignons envient le royaume des slimes. Pour conquérir ce territoire ils ont créé un vortex engloutissant les terres des slimes. Notre équipe s'est lancée dans la création d'un personage 'Tiny' et ses compagnons, des slimes courageux emprisonnés dans le vortex. Leur mission : s'échapper du vortex en naviguant sur les débris de leur royaume.
+    </p>
+    <p>
+      Grâce a ces projets, j'ai acquis une solide expérience en programmation C#, en utilisant les classes MonoBehaviour pour créer des comportements interactifs pour nos personnages et environnements. J'ai également appris à établir des communications entre les différents scripts et les GameObjects pour donner vie à notre jeu. La création de multiples scènes qui nous a permis de changer le décor et de faire différents niveaux et l'utilisation du système de PlayerPrefs pour gérer les sauvegardes ont également enrichi mes compétences techniques.
+    </p>
+    <p>
+      Cette immersion dans Unity m'a permis de développer ma créativité dans le monde du jeu vidéo ma résolution de problèmes car j'ai été confronter a de nombreux bugs et ma capacité à collaborer au sein d'une équipe en utilisant <a href="/formationdashboard/git">git</a>.
+    </p>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>
