@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/index.html'));
 });
 
+app.get('/formationdashboard/expressjs', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/expressjs.html'));
+});
+
 // Définition de la route pour la barre de navigation
 app.get('/navbar', (req, res) => {
   // Renvoyer la barre de navigation navbar.html avec l'identifiant de la page actuelle
@@ -26,6 +30,11 @@ app.get('/projet', (req, res) => {
 // Définition de la route pour la page slimego (sous-page de projet)
 app.get('/projet/slimego', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/slimego.html'));
+});
+
+// Définition de la route pour la page astro (sous-page de projet)
+app.get('/projet/astro', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/astro.html'));
 });
 
 // Définition de la route pour la page asciiart (sous-page de projet)
@@ -47,6 +56,10 @@ app.get('/formationdashboard/qt', (req, res) => {
 
 app.get('/formationdashboard/unity', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/unity.html'));
+});
+
+app.get('/formationdashboard/expressjs', (req, res) => {
+  res.sendFile(resolve(__dirname, 'pages/expressjs.html'));
 });
 
 app.get('/formationdashboard/numresponsable', (req, res) => {

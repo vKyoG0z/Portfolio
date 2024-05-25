@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ExpressJS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>ExpressJS</h1>
+  </div>
+
+  <div class="container">
+   
+    
+    <!-- Ajout de l'image expressjsroute.png -->
+    <img src="/expressroute.png" alt="ExpressJS Route" class="expressjsroute-logo">
+
+    <p>Durant ma formation, nous avons appris le fonctionnement de Express.js, un framework web pour Node.js. Son système de routage est un élément central qui permet de gérer efficacement les requêtes HTTP et de diriger les utilisateurs vers les différentes pages de notre application.</p>
+
+        <p> Actuellement vous êtes sur la page expressjs.html qui est définis sur la route /formationdashboard/expressjs comme le montre l'image ci-dessus. Vous pouvez également vérifier dans votre url !</p> 
+        
+        <p>Tout commence par l'utilisation de la méthode app.get, qui écoute les requêtes GET sur une URL spécifique. Par exemple, si un utilisateur entre l'URL '/accueil' dans son navigateur, Express.js intercepte cette requête et exécute la fonction associée.
+        
+        Mais Express.js ne se limite pas aux simples requêtes GET. Avec les méthodes app.post, app.put, app.delete, etc. Nous pouvons également gérer d'autres types de requêtes HTTP, comme les soumissions de formulaires, les mises à jour de ressources, ou les suppressions de données qui sont des choses beaucoup utilisées dans le monde du web.</p>
+        
+        <p>L'un des avantages de Express.js est sa flexibilité. En combinant différents types de routes nous pouvons créer des applications web complexes avec une logique de navigation fluide.</p>
+        
+        <p>Express.js nous a ouvert les portes d'un monde de développement web dynamique et modulable grâce à son système de routage puissant et sa simplicité d'utilisation, nous avons pu créer des applications web (comme ce portfolio sur lequel vous vous trouvez) tout en gardant notre code bien organisé et facile à maintenir."</p>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>

@@ -186,3 +186,41 @@ img:hover {
   margin: 40px auto; 
   transition: transform 0.5s ease;
 }
+
+/* Style spécifique pour l'image ExpressJS Route */
+.expressjsroute-logo {
+  width: 93%; /* Définit la largeur de l'image à 100% du conteneur */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 20px auto; /* Centre l'image horizontalement et ajoute une marge de 20px autour de l'image */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+/* Ajout du style pour l'image Astro */
+.astro-logo {
+  width: 600px; /* Définit la largeur de l'image */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 40px auto; /* Ajout de marges pour centrer l'image horizontalement */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+.assetastroimg{
+  width: 95%; /* Définit la largeur de l'image */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 40px auto; /* Ajout de marges pour centrer l'image horizontalement */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+.gitlab-image{
+  width: 95%; /* Définit la largeur de l'image */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 40px auto; /* Ajout de marges pour centrer l'image horizontalement */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}

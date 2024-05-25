@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Astro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>Astro</h1>
+  </div>
+
+  <div class="container">
+
+        
+       
+        
+    <img src="/assetastro.png" alt="assetastro" class="assetastroimg">
+     
+    <p>Dans mon projet 'Astro' développé sous Unity 2D, j'ai créé un jeu où le joueur joue le rôle d'un astronaute coincé dans un laboratoire envahi par des hordes de slimes et de zombies squelettes. L'action se déroule de gauche à droite alors que les ennemis se déplacent vers un drapeau au centre de la salle du laboratoire, que le joueur doit protéger à tout prix.</p>
+
+        <p>L'objectif est simple survivre autant de manches que possible en repoussant les assauts incessants des créatures hostiles. Chaque manche devient de plus en plus intense, avec des vagues d'ennemis de plus en plus redoutables. </p>
+        
+        <p>Le défi réside dans la gestion des ressources limitées et dans la capacité à anticiper les mouvements des ennemis pour protéger efficacement le drapeau central.
+        
+        <p> Astro est un test de compétences et de résistance où chaque seconde compte et où la survie dépend de la capacité du joueur à garder son calme face à l'assaut constant des ennemis."</p>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>
