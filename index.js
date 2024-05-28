@@ -8,7 +8,7 @@ app.use(express.static('static'));
 
 // Route racine du projet qui redirige vers index.html
 app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/index.html'));
+  res.sendFile(resolve(__dirname, 'index.html'));
 });
 
 app.get('/formationdashboard/expressjs', (req, res) => {
